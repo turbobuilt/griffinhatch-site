@@ -2,14 +2,33 @@
 
 
 
+@media(max-width: 1000px) {
+    body .box-1 .title {
+        font-size: 12px;
+    }
+    body .main {
+        height: auto;
+    }
+    body .row {
+        height: auto;
+        flex-wrap: wrap;
+    }
+    body .row .box {
+        width: 100%;
+    }
+}
+.box-2 {
+    align-self: stretch;
+}
 .row-2 .box .header {
-    font-size: 20px;
+    font-size: 19px;
     text-align: center;
     margin-bottom: 10px;
 }
 .row-2 .box {
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
     /* justify-content: center;
     align-items: center;
     text-align: center; */
@@ -17,6 +36,9 @@
 }
 .row-2 .box {
     width: 25%;
+}
+.row-1, .row-2, .row-3 {
+    align-items: flex-end;
 }
 textarea {
     border: none;
