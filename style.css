@@ -1,24 +1,162 @@
 
-
-
-
-@media(max-width: 1000px) {
+@media(max-width: 2000px) {
     body .box-1 .title {
-        font-size: 12px;
+        font-size: 24px;
     }
     body .main {
         height: auto;
     }
     body .row {
-        height: auto;
+        height: auto; 
         flex-wrap: wrap;
     }
     body .row .box {
         width: 100%;
     }
 }
+
+/* front page */
+.cover  {
+    height: 100vh;
+    background: linear-gradient(45deg, #0076FF, #EB3828);
+}
+.logo_image  {
+    display: block;
+    max-width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 10vh;
+}
+
+/* Initialization of Subsequent Code */
+@import url("https://fonts.googleapis.com/css2?family=Asap&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Asap", sans-serif;
+  scroll-behavior: smooth;
+}
+a {
+  text-decoration: none;
+}
+ul {
+  list-style: none;
+}
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+  background: #42455a;
+  padding: 20px;
+  text-align: center;
+  border-bottom: 1px solid #00c2cb;
+}
+header nav a {
+  padding: 10px 20px;
+  font-size: 2rem;
+  color: #b9f3ff;
+  border-radius: 5px;
+  letter-spacing: 0.5px;
+}
+header nav a:hover,
+header nav a.active {
+  background: #00c2cb;
+  color: #42455a;
+  transition: .5s ease-out;
+  letter-spacing: 2px;
+}
+
+/*body {
+  background: #42455a;
+}*/
+
+
+/* Section Style Code */
+section {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 15vh;
+}
+section:nth-child(2) {
+  color: #2d3a68;
+}
+section:nth-child(3) {
+  color: #6f7ce0;
+  background: #a9cbf0;
+}
+section:nth-child(4) {
+  color: #04b554;
+}
+section:nth-child(5) {
+  color: #5c6fff;
+  background: #b3c4cb;
+}
+section:nth-child(6) {
+  color: #EB55f7;
+}
+section .container {
+  margin: 100px;
+}
+section h1 {
+  font-size: 7rem;
+  margin: 20px;
+}
+section h2 {
+  font-size: 70px;
+  text-align: center;
+  text-transform: uppercase;
+}
+section .text-container {
+  display: flex;
+}
+section .text-container .text-box {
+  margin: 20px;
+  padding: 20px;
+  background: #49454d;
+}
+section .text-container .text-box h3 {
+  font-size: 50px;
+  text-align: center;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+
+@media (max-width: 900px) {
+  section h1 {
+    font-size: 5rem;
+    text-align: center;
+  }
+  section .text-container {
+    flex-direction: column;
+  }
+}
+
+.reveal {
+  position: relative;
+  transform: translateY(150px);
+  opacity: 0;
+  transition: 2s all ease;
+}
+
+.reveal.active {
+  transform: translateY(0);
+  opacity: 1;
+}
+
+
+
+
+
+
+/*
+
 .row-2 img {
-    height: 50px;
+    height: 100px;
     margin: 20px;
 }
 .box-2 {
@@ -33,9 +171,9 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    /* justify-content: center;
-    align-items: center;
-    text-align: center; */
+    // justify-content: center;
+    // align-items: center;
+    // text-align: center; 
     padding: 15px;
 }
 .row-2 .box {
@@ -116,7 +254,7 @@ textarea:active, textarea:focus {
 }
 .box {
     flex-grow: 1;
-    background: white;
+    background: rgba(179, 173, 228, 0.719);
     padding: 3px;
     border-radius: 4px;
     box-shadow: 0 0 6px rgba(0, 0, 0, 0.7);
@@ -125,7 +263,7 @@ textarea:active, textarea:focus {
 .row {
     height: 33.3%;
     display: flex;
-    /* padding: 0 15px; */
+    // padding: 0 15px; 
 }
 .main {
     padding: 15px;
@@ -139,12 +277,101 @@ img.logo {
     max-height: 100%;
     max-width: 100%;
 }
+*/
 body {
-    background: linear-gradient(to bottom, #2367fd, #b94d17);
+    background: linear-gradient(45deg, #6c75c1, #74a3d8);
+}
+
+/* Footer  */
+
+/* main footer container */
+.footer {
+    height: 50vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    background: linear-gradient(0deg, #322e7c, #5255b8)
+}
+
+/* left footer containers and elements */
+.footer .footer_left {
+    height: 100%;
+}
+.footer-left .footer-topLeft {
+    font-size: 24px;
+    color: #dfe5ff;
+    margin: 50px;
+}
+
+.footer-left .footer-bottomLeft {
+    font-size: 24px;
+    color: #dfe5ff;
+}
+
+.footer-topLeft .footer-title{
+    font-size: 24px;
+    color: #dfe5ff;
+    text-align: center;
+    /* padding-top: 15vh; */
+}
+
+.footer-topLeft .footer-nav{
+    font-size: 16px;
+    color: #dfe5ff;
+    text-align: center;
+}
+
+.footer-bottomLeft .footer-copyright{
+    font-size: 16px;
+    color: #dfe5ff;
+    text-align: center;
+    /* padding-top: 15vh; */
+}
+
+/* footer logo container */
+.footer .footer-logo {
+    display: block;
+    max-width: 30%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 0vh;
+    opacity: 100%;
+}
+
+/* left footer containers and elements */
+.footer .footer_right{
+    height: 50vh;
+    width: 33.3%;
+}
+.footer-right .footer-topRight{
+    font-size: 24px;
+    color: #dfe5ff;
+    text-align: center;
+}
+
+.footer-right .footer-bottomRight{
+    font-size: 24px;
+    color: #dfe5ff;
+}
+
+.footer-topRight .contact{
+    font-size: 16px;
+    color: #dfe5ff;
+    /* this aligns the text */
+    text-align: center;
+    padding-top: 0vh; 
+}
+
+.footer-bottomRight .copyright{
+    font-size: 16px;
+    color: #dfe5ff;
+    /* this aligns the text */
+    text-align: center;
+    padding-top: 20vh;
 }
 
 
-
+/* unclear what this piece of code does */
 * {
     box-sizing: border-box;
     font-family: 'Montserrat', sans-serif;
