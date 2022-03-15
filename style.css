@@ -15,15 +15,20 @@
     }
 }
 
+html {
+    scroll-snap-type: y mandatory;
+}
+
 /* Body Background Definition */
 body {
-    background: linear-gradient(45deg, #506fd6, #98b5ff);
+    background: linear-gradient(0deg, #748ece, #9fb5ff);
 }
 
 /* Cover Page */
 .cover  {
     height: 100vh;
     background: linear-gradient(45deg, #0076FF, #EB3828);
+    scroll-snap-align: center;
 }
 .logo_image  {
     display: block;
@@ -93,23 +98,26 @@ section {
   justify-content: center;
   align-items: center;
   padding-bottom: 15vh;
+  scroll-snap-align: center;
 }
 section:nth-child(2) {
-  color: #2d3a68;
+  color: #d5e8ff;
+  background: linear-gradient(190deg, #4060c7, #4361b1);
 }
 section:nth-child(3) {
-  color: #5163eb;
-  background: #c1cfff; /* #d1dcff; */
+  color: #ebeeff;
+  background: linear-gradient(0deg, #6272af, #119fe1); /* #02cfda); */
 }
 section:nth-child(4) {
-  color: #00ee5f;
+  color: #00f53d;
+  background: linear-gradient(185deg, #326db5, #4a4f8c);
 }
 section:nth-child(5) {
-  color: #495cee;
-  background: #d6c1f7 /* #c5dbff; */
+  color: #00fbff; /* #042d9c */
+  background: linear-gradient(185deg, #434997, #435174); /* linear-gradient(185deg, #b5d3ff, #9ad3fe); */
 }
 section:nth-child(6) {
-  color: #EB55f7;
+  color: #00fbff;
 }
 section .container {
   margin: 100px;
@@ -121,7 +129,6 @@ section h1 {
 section h2 {
   font-size: 70px;
   text-align: center;
-  text-transform: uppercase;
 }
 section .text-container {
   display: flex;
@@ -129,12 +136,11 @@ section .text-container {
 section .text-container .text-box {
   margin: 20px;
   padding: 20px;
-  background: #49454d;
+  background: #6b789397;
 }
 section .text-container .text-box h3 {
   font-size: 50px;
   text-align: center;
-  text-transform: uppercase;
   margin-bottom: 10px;
 }
 
@@ -171,7 +177,8 @@ section .text-container .text-box h3 {
     width: 100%;
     display: flex;
     align-items: center;
-    background: linear-gradient(0deg, #4548a4, #4e5abb)
+    background: linear-gradient(0deg, #2e4d7b, #455dbe);
+    scroll-snap-align: start;
 }
 
 /* left footer containers and elements */
