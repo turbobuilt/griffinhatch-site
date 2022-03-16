@@ -246,27 +246,6 @@ section .text-container .text-box h3 {
     padding-left: 15px;
     justify-content: center;
 }
-.footer-left .footer-bottomLeft {
-    font-size: 24px;
-    color: #ffffff;
-}
-.footer-topLeft .footer-title{
-    font-size: 24px;
-    color: #ffffff;
-    text-align: center;
-    /* padding-top: 15vh; */
-}
-.footer-topLeft .footer-nav{
-    font-size: 16px;
-    color: #ffffff;
-    text-align: center;
-}
-.footer-bottomLeft .footer-copyright{
-    font-size: 16px;
-    color: #ffffff;
-    text-align: center;
-    /* padding-top: 15vh; */
-}
 
 /* footer logo container */
 .footer .footer-logo {
@@ -279,39 +258,7 @@ section .text-container .text-box h3 {
 }
 
 /* left footer containers and elements */
-.footer .footer_right{
-    height: 50vh;
-    width: 30%;
-    padding: 20px;
-}
-.footer-right .footer-topRight{
-    font-size: 24px;
-    color: #ffffff;
-    text-align: center;
-}
-.footer-right .footer-topRight h4{
-  font-size: 30px;
-  text-align: center;
-  margin-bottom: 15px;
-}
-.footer-right .footer-bottomRight{
-    font-size: 24px;
-    color: #ffffff;
-}
-.footer-topRight .contact{
-    font-size: 16px;
-    color: #ffffff;
-    /* this aligns the text */
-    text-align: center;
-    padding-top: 0vh; 
-}
-.footer-bottomRight .copyright{
-    font-size: 16px;
-    color: #ffffff;
-    /* this aligns the text */
-    text-align: center;
-    padding-top: 20vh;
-}
+
 
 /* unclear what this piece of code does 
 * {
