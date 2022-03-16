@@ -102,11 +102,11 @@ section {
   scroll-snap-align: center;
 }
 section:nth-child(2) {
-  color: #e2efff;
+  color: #fff7e2;
   background: linear-gradient(190deg, #4060c7, #4361b1);
 }
 section:nth-child(3) {
-  color: #e9edff;
+  color: #e9f5ff;
   background: linear-gradient(0deg, #6475b8, #5d8fcd); /* #02cfda); */
 }
 section:nth-child(5) {
@@ -230,7 +230,6 @@ section .text-container .text-box h3 {
     margin-top:auto;
     margin-bottom: auto;
     padding: 15px;
-    padding-bottom: 50px;
     display: flex;
     justify-content: center;
 }
