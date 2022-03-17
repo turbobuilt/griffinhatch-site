@@ -165,6 +165,11 @@ section .message-container {
     padding: 25px;
     background: #2f354158;
   }
+  section .message-container .message-box h3 {
+    font-size: 50px;
+    text-align: center;
+    margin-bottom: 25px;
+  }
 
 @media (max-width: 900px) {
   section h1 {
@@ -225,7 +230,7 @@ textarea {
     max-width: 100%;
     border: blue;
     border-radius: 3px;
-    margin: 1%;
+    margin: 2%;
     justify-items: center;
 }
 textarea:active, textarea:focus {
@@ -272,9 +277,10 @@ textarea:active, textarea:focus {
 .footer .text {
     font-size: 15px;
     color: white;
-    margin: 5px;
-    padding-left: 15px;
+    margin-left: 14px;
+    padding: 2px;
     justify-content: center;
+    align-items: center;
 }
 
 
