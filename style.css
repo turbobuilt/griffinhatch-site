@@ -48,6 +48,7 @@ body {
     transform: translateY(0);
     opacity: 1;
 }
+/* End Cover Page */
   
 
 /* Initialization of Subsequent Code */
@@ -99,7 +100,7 @@ section {
   justify-content: center;
   align-items: center;
   padding-bottom: 0vh;
-  scroll-snap-align: center;
+  scroll-snap-align: start;
 }
 section:nth-child(2) {
   color: #fff5db;
@@ -150,12 +151,14 @@ section .text-container .text-box h3 {
   text-align: center;
   margin-bottom: 25px;
 }
+
+
 /* Message Field */
 section .message-container {
     display: flex;
     justify-content: center;
   }
-  section .message-container .message-box {
+section .message-container .message-box {
     width: 40%;
     max-height: 48vh;
     font-size: 1.6rem;
@@ -164,12 +167,45 @@ section .message-container {
     margin-top: 50px;
     padding: 25px;
     background: #2f354158;
-  }
-  section .message-container .message-box h3 {
-    font-size: 50px;
+}
+section .message-container .message-box h3 {
+   text-align: center;
+   margin-bottom: 20px;
+}
+section .message-container .message-box .entry-row {
+  padding: 0%;
+  display: flex;
+  justify-content: auto;
+}
+section .message-container .message-box .text-line {
+  font-size: 0.7em;
+  padding: 0 2% 0 2%;
+}
+section .message-container .message-box .entry-line {
+    font-size: 0.7em;
+    padding: 1%;
+    border: 1%;
+    justify-content: center;
+}
+textarea {
+    max-width: 98%;
+    border: blue;
+    border-width: 1px;
+    border-radius: 0px;
+    margin: 0%;
+}
+textarea:active, textarea:focus {
+    border: none;
+    outline: none;
+}
+.button-placement {
+    width: 98%;
+    margin: 0 1%; 
+    padding: 0 1%; 
     text-align: center;
-    margin-bottom: 25px;
-  }
+}
+
+
 
 @media (max-width: 900px) {
   section h1 {
@@ -194,6 +230,8 @@ section .message-container {
   transform: translateY(0);
   opacity: 1;
 }
+
+
 
 /* Content Structures */
 .carousel {
@@ -224,19 +262,7 @@ section .message-container {
     align-items: center;
 }
 
-/* Message Entry Field */
-textarea {
-    width: 45%;
-    max-width: 100%;
-    border: blue;
-    border-radius: 3px;
-    margin: 2%;
-    justify-items: center;
-}
-textarea:active, textarea:focus {
-    border: none;
-    outline: none;
-}
+
 
 /* Footer  */
 /* main footer container */
