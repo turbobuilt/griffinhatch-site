@@ -147,6 +147,20 @@ section .text-container .text-box {
   background: #2f354158;
 }
 section .text-container .text-box h3 {
+    font-size: 50px;
+    text-align: center;
+    margin-bottom: 25px;
+  }  
+section .text-container .carousel-box {
+    max-width: 20%;
+    font-size: 1.6rem;
+    border-radius: 0px; 
+    margin: 15px;
+    margin-top: 50px;
+    padding: 25px;
+    background: #2f354158;
+  }
+section .text-container .carousel-box h3 {
   font-size: 50px;
   text-align: center;
   margin-bottom: 25px;
