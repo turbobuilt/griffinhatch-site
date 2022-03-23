@@ -272,9 +272,10 @@ textarea:active, textarea:focus {
     padding: 25px;
     align-items: center;
 }
-img {
-    height: 100px;
-    margin: 20px 35%;
+.icon-place {
+    width: 20%;
+    margin: 0px 40% 5px 40%;
+    align-items: center;
 }
 
 
