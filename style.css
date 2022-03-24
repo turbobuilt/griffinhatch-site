@@ -163,6 +163,8 @@ section .carousel-container .carousel-box {
     margin: 15px;
     margin-top: 50px;
     padding: 25px;
+    border-radius: 4px;
+    box-shadow: 0 0 6px rgba(0, 0, 0, 0.7);
     background: #2f354158;
   }
 section .carousel-container .carousel-blank {
