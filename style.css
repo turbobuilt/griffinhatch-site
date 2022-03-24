@@ -167,19 +167,28 @@ section .carousel-container .carousel-box {
     box-shadow: 0 0 6px rgba(0, 0, 0, 0.7);
     background: #2f354158;
   }
-section .carousel-container .carousel-blank {
+section .carousel-container .carousel-blankL {
+    width: 30%;
+    height: 40%;
     max-width: 50%;
     max-height: 30%;
     display: flex;
   }
-.carousel-blank .arrow-place-left {
-    max-width: 30%;
+.carousel-blankL .arrow-place-left {
+    max-width: 66.7%;
     margin-top: 25%;
     margin-right: 10%;
     justify-content: right;
 }
-.carousel-blank .arrow-place-right {
-    max-width: 30%;
+section .carousel-container .carousel-blankR {
+    width: 40%;
+    height: 40%;
+    max-width: 50%;
+    max-height: 30%;
+    display: flex;
+  }
+.carousel-blankR .arrow-place-right {
+    max-width: 50%;
     margin-top: 25%;
     margin-left: 10%;
     justify-content: left;
