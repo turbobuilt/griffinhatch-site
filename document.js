@@ -19,6 +19,10 @@ window.onscroll = () => {
   });
 };
 
+
+//                //
+//  FOR SECTION   //
+//                //
 function reveal() {
   var reveals = document.querySelectorAll(".reveal");
 
@@ -34,13 +38,16 @@ function reveal() {
     }
   }
 }
-
 window.addEventListener("scroll", reveal);
-
 // To check the scroll position on page load
 reveal();
 
 
+
+
+//                //
+// FOR COVER LOGO //
+//                //
 function revealImage() {
   var reveals = document.querySelectorAll(".revealImage");
 
@@ -56,12 +63,18 @@ function revealImage() {
     }
   }
 }
-
-window.addEventListener("scroll", revealImage);
-
+window.addEventListener("load", revealImage);
 // To check the scroll position on page load
 reveal();
 
+
+
+
+
+
+//                                  //
+// TO DISABLE SCROLLBAR ON CAROUSEL //
+//                                  //
 document.querySelector('#controls').addEventListener('click', (event) => {
   const $slide = document.querySelector(event.target.getAttribute('href'));
   if (!$slide) return;

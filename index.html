@@ -35,20 +35,20 @@
               <div class="container reveal">
                 <h2>Custom Built</h2>
                 <div class="carousel">
-                  <div class="text-container">
-                      <div class="carousel-box carousel__item">
-                        <img src="./icon/candycane.svg" class="icon-place">
-                      <div class="carousel__image">
+                  <div class="carousel-container">
+                    <div class="carousel-blank carousel__item">
+                      <div id="0" class="carousel__image">
+                        <img src="./icon/leftCarouselArrow.png" class="arrow-place-left">
                       </div>
                     </div>
-                    <div class="carousel-box carousel__item">
+                    <div id="1" class="carousel-box carousel__item">
                         <img src="./icon/candycane.svg" class="icon-place">
                       <div class="carousel__image">
                         Every business has a data problem once they grow past a few customers.
                         Custom software is the single best way to handle data issues, hands down.
                       </div>
                     </div>
-                    <div class="carousel-box carousel__item">
+                    <div id="2" class="carousel-box carousel__item">
                         <img src="./icon/chat-sleep.svg" class="icon-place">
                       <div class="carousel__image">
                         Data entry is a chore. This time monster often 
@@ -56,7 +56,7 @@
                         hires, your present staff will pay instead.
                       </div>
                     </div>
-                    <div class="carousel-box carousel__item">
+                    <div id="3" class="carousel-box carousel__item">
                         <img src="./icon/cogs.svg" class="icon-place">
                       <div class="carousel__image">
                         What if you had custom software?  What if that software was perfectly
@@ -64,11 +64,16 @@
                         increase productivity?
                       </div>
                     </div>
-                    <div class="carousel-box carousel__item">
+                    <div id="4" class="carousel-box carousel__item">
                         <img src="./icon/trophy.svg" class="icon-place">
                       <div class="carousel__image">                          
                         It's simple.  You would save money, increase your employee work efforts boosting
                         moral all while yielding exponentially better results!
+                      </div>
+                    </div>
+                    <div id="5" class="carousel-blank carousel__item">
+                      <div class="carousel__image">
+                        <img src="./icon/rightCarouselArrow.png" class="arrow-place-right">
                       </div>
                     </div>
                   </div>
@@ -80,7 +85,12 @@
               <div class="container reveal">
                 <h2>How We Help</h2>
                 <div class="carousel">
-                <div class="text-container">
+                <div class="carousel-container">
+                    <div class="carousel-blank carousel__item">
+                      <div class="carousel__image">
+                        <img src="./icon/leftCarouselArrow.png" class="arrow-place-left">
+                      </div>
+                    </div>
                   <div class="carousel-box carousel__item">
                     <h3>Step 1</h3>
                     <div class="carousel__image">Reach out and briefly describe your business goals</div>
@@ -92,6 +102,11 @@
                   <div class="carousel-box carousel__item">
                     <h3>Step 3</h3>
                     <div class="carousel__image">Receive a model on how your business can improve</div>
+                  </div>
+                  <div class="carousel-blank carousel__item">
+                    <div class="carousel__image">
+                      <img src="./icon/rightCarouselArrow.png" class="arrow-place-right">
+                    </div>
                   </div>
                 </div>
                 </div>
@@ -142,23 +157,23 @@
                     </div>
                     <div class="entry-row">
                       <div class="entry-lines">
-                        <textarea placeholder="First Name" rows="1"></textarea>
+                        <textarea id="Request" name="F_Name" placeholder="First Name" rows="1"></textarea>
                       </div>
                       <div class="entry-lines">
-                        <textarea placeholder="Last Name" rows="1"></textarea>
+                        <textarea id="Request" name="L_Name" placeholder="Last Name" rows="1"></textarea>
                       </div>
                     </div>
                     <div class="entry-row">
                       <div class="entry-lines">
-                        <textarea placeholder="Company Name" rows="1"></textarea>
+                        <textarea id="Request" name="Company" placeholder="Company Name" rows="1"></textarea>
                       </div>
                       <div class="entry-lines">
-                        <textarea placeholder="Phone" rows="1"></textarea>
+                        <textarea id="Request" name="Phone" placeholder="Phone" rows="1"></textarea>
                       </div>
                     </div>
                     <div class="entry-row">
                       <div class="entry-line">
-                          <textarea placeholder="What do you need?" rows="2"></textarea>
+                          <textarea id="Request" name="Request" placeholder="What do you need?" rows="2"></textarea>
                       </div>
                     </div>
                     <div class="entry-row">
