@@ -238,7 +238,7 @@ section .message-container .message-box {
     font-size: 1.6rem;
     border-radius: 0px;
     margin: 15px;
-    margin-top: 50px;
+    margin-top: 0px;
     padding: 25px;
     border-radius: 4px;
     box-shadow: 0 0 6px rgba(0, 0, 0, 0.7);
