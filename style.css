@@ -249,7 +249,7 @@ section .message-container .message-box h3 {
     margin-bottom: 20px;
 }
 section .message-container .message-box .text-line {
-    font-size: 1em;
+    font-size: 0.9em;
     justify-content: center;
     padding-left: 4px;
     padding-bottom: 6px;
@@ -260,7 +260,7 @@ section .message-container .message-box .text-line {
 }
 .entry-row .entry-lines {
     width: 100%;
-    font-size: 1em;
+    font-size: 0.9em;
     margin: 2px 4px;
     padding: 0%;
     border: 0%;
@@ -268,7 +268,7 @@ section .message-container .message-box .text-line {
 }
 .entry-line {
     width: 100%;
-    font-size: 1em;
+    font-size: 0.9em;
     margin: 3px 4px;
     text-align: 0 0;
 }
@@ -290,16 +290,19 @@ textarea:active, textarea:focus {
 .button-placement {
     font-size: 0.9em;
     font-weight: bold;
-    color: rgb(92, 92, 241);
+    color: #0076FF;
     width: 100%;
     max-width: 100%;
     border-width: 1px;
     border-radius: 5px;
     margin: 2px 3px; 
-    padding: 15px;
+    padding: 8px;
     text-align: center;
     box-shadow: 0 0 3px, rgba(0, 0, 0, 0.7);
     background-color: #fffefe;
+}
+a {
+    color: #0076FF;
 }
 
 
