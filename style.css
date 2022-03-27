@@ -402,13 +402,13 @@ textarea:active, textarea:focus {
 }
 /* left footer containers and elements */
 .footer h4 {
-    font-size: 30px;
+    font-size: 1.7em;
     color: #ffffff;
     margin: 15px;
     justify-items: center;
 }
 .footer .text {
-    font-size: 15px;
+    font-size: 1.1em;
     color: white;
     margin-left: 14px;
     padding: 2px;
