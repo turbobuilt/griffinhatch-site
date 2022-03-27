@@ -107,7 +107,7 @@ section:nth-child(2) {
   background: linear-gradient(190deg, #4060c7, #4361b1);
 }
 section:nth-child(3) {
-  color: #e9f5ff;
+  color: #dee7ee;
   background: linear-gradient(0deg, #6475b8, #5d8fcd); /* #02cfda); */
 }
 section:nth-child(5) {
@@ -125,6 +125,13 @@ section:nth-child(4) {
 section .container {
   margin: 50px;
 }
+section .container-sub {
+    margin: 50px;
+}
+section .container-last {
+    margin: 50px;
+    margin-bottom: 50vh;
+}
 section h1 {
   font-size: 7rem;
   margin: 20px;
@@ -132,25 +139,45 @@ section h1 {
 section h2 {
   font-size: 4rem;
   text-align: center;
+  margin-bottom: 5vh;
 }
 section .text-container {
   display: flex;
   justify-content: center;
 }
 section .text-container .text-box {
-  max-width: 40%;
-  font-size: 1.6rem;
-  border-radius: 0px; 
-  margin: 15px;
-  margin-top: 50px;
-  padding: 25px;
-  background: #2f354158;
+    width: 25vw;
+    max-width: 40%;
+    font-size: 1.8rem;
+    border-radius: 0px;     
+    margin: 5px 15px;
+    padding: 25px;
+    border-radius: 4px;
+    box-shadow: 0 0 6px rgba(0, 0, 0, 0.7);
+    background: #2f354158;/* #50556158;  #dde8ff58 */
 }
 section .text-container .text-box h3 {
     font-size: 50px;
     text-align: center;
     margin-bottom: 25px;
-  }  
+  } 
+/* about text box control */
+section .text-container .who-box {
+    width: 40vw;
+    max-width: 40%;
+    font-size: 1.6rem;
+    border-radius: 0px;     
+    margin: 5px 15px;
+    padding: 25px;
+    border-radius: 4px;
+    box-shadow: 0 0 6px rgba(0, 0, 0, 0.7);
+    background: #2f354158;/* #41475a;/* #50556158;  #dde8ff58 */
+}
+section .text-container .who-box h3 {
+    font-size: 50px;
+    text-align: center;
+    margin-bottom: 25px;
+  }   
 section .carousel-container {
     height: 40%;
     margin: 0 10%;
@@ -213,14 +240,16 @@ section .message-container .message-box {
     margin: 15px;
     margin-top: 50px;
     padding: 25px;
+    border-radius: 4px;
+    box-shadow: 0 0 6px rgba(0, 0, 0, 0.7);
     background: #2f354158;
 }
 section .message-container .message-box h3 {
-   text-align: center;
-   margin-bottom: 20px;
+    text-align: center;
+    margin-bottom: 20px;
 }
 section .message-container .message-box .text-line {
-    font-size: 0.7em;
+    font-size: 1em;
     justify-content: center;
     padding-left: 4px;
     padding-bottom: 6px;
@@ -231,7 +260,7 @@ section .message-container .message-box .text-line {
 }
 .entry-row .entry-lines {
     width: 100%;
-    font-size: 0.7em;
+    font-size: 1em;
     margin: 2px 4px;
     padding: 0%;
     border: 0%;
@@ -239,27 +268,39 @@ section .message-container .message-box .text-line {
 }
 .entry-line {
     width: 100%;
-    font-size: 0.7em;
+    font-size: 1em;
     margin: 3px 4px;
     text-align: 0 0;
 }
 textarea {
+    font-size: 0.8em;
     width: 100%;
     max-width: 100%;
     border: blue;
     border-width: 1px;
-    border-radius: 0px;
+    border-radius: 3px;
     margin: 0 0%;
+    padding: 5px;
+    box-shadow: 0 0 3px, rgba(0, 0, 0, 0.7);
 }
 textarea:active, textarea:focus {
     border: none;
     outline: none;
 }
 .button-placement {
+    font-size: 0.8em;
+    font-weight: bold;
+    color: rgb(92, 92, 241);
     width: 100%;
-    margin: 2px 4px; 
+    max-width: 100%;
+    border-width: 1px;
+    border-radius: 3px;
+    margin: 2px 3px; 
+    padding: 8px;
     text-align: center;
+    box-shadow: 0 0 3px, rgba(0, 0, 0, 0.7);
 }
+
 
 
 
@@ -323,7 +364,7 @@ textarea:active, textarea:focus {
 }
 .icon-place {
     width: 20%;
-    margin: 0px 40% 5px 40%;
+    margin: 5% 40%;
     align-items: center;
 }
 
