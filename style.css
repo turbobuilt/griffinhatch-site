@@ -110,6 +110,10 @@ section:nth-child(3) {
   color: #dee7ee;
   background: linear-gradient(0deg, #6475b8, #5d8fcd); /* #02cfda); */
 }
+section:nth-child(4) {
+  color: #ffecb9;
+  background: linear-gradient(185deg, #6b72d3, #5b77af); /* linear-gradient(185deg, #b5d3ff, #9ad3fe); */
+}
 section:nth-child(5) {
   color: #b8ecff; /* #00f53d */
   background: linear-gradient(185deg, #326db5, #4f5488);
@@ -117,10 +121,6 @@ section:nth-child(5) {
 section:nth-child(6) {
   color: #fff4db; /* #042d9c */
   background: linear-gradient(185deg, #4a4f93, #3a4c71); /* linear-gradient(185deg, #b5d3ff, #9ad3fe); */
-}
-section:nth-child(4) {
-  color: #ffecb9;
-  background: linear-gradient(185deg, #6b72d3, #5b77af); /* linear-gradient(185deg, #b5d3ff, #9ad3fe); */
 }
 section .container {
   margin: 50px;
@@ -288,7 +288,7 @@ textarea:active, textarea:focus {
     outline: none;
 }
 .button-placement {
-    font-size: 0.8em;
+    font-size: 0.9em;
     font-weight: bold;
     color: rgb(92, 92, 241);
     width: 100%;
