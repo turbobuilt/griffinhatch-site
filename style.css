@@ -611,8 +611,8 @@ img.logo {
     padding: 20px;
     max-width: 50%;
 }
-.solution-details img {
-    max-width: 100%;
+.solution-container img {
+    max-width: 80%;
 }
 .solution-details div {
     margin-bottom: 20px;
@@ -635,4 +635,129 @@ img.logo {
     background: linear-gradient(52deg, #0076FF, #EB3828);
     font-size: 15px;
     box-shadow: 1px 1px 4px #4161bf;
+}
+.img-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.solution-title {
+    text-align:center;
+    padding:10px;
+    margin-bottom: 20px;
+}
+#solution-2 {
+    flex-direction:column;
+}
+
+
+@media (max-width: 650px) {
+    .solution-title {
+        font-size: 23px;
+        text-align: left;
+    }
+    .solution-container > div {
+        max-width: 100%;
+        padding: 0;
+    }
+    .solution-container {
+        display: flex;
+        flex-direction: column;
+        align-items: stretch;
+        justify-content: flex-start;
+    }
+    .solution-container .spacer {
+        height: 20px;
+    }
+    #solution-1 {
+        flex-direction: column-reverse;
+        justify-content: flex-end;
+    }
+
+    #solution-2 {
+        justify-content:flex-start;
+        padding: 20px;
+        align-items: stretch;
+    }
+    #solution-2 .solution-container {
+        padding: 0;
+    }
+    .call-to-action-button-container {
+        display: flex;
+        justify-content: center;
+    }
+    .solution-title {
+        padding: 0;
+
+    }
+    section h2 {
+        font-size: 20px;
+        margin-bottom: 15px;
+        text-align: left;
+    }
+    section .container {
+        padding: 10px;
+        margin: 0;
+    }
+    section .text-container {
+        /* margin: 10px; */
+    }
+    section .text-container .who-box {
+        margin: 0;
+        padding: 10px;
+        margin-bottom: 15px;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+    }
+    section .text-container .who-box h3 {
+        font-size: 20px;
+        margin-bottom: 8px;
+    }
+    .portrait {
+        width: 100%;
+        margin: 0;
+        display: block;
+    }
+    .who-box p {
+        font-size: 18px;
+        margin-top: 10px;    
+    }
+    section .text-container .who-box.dane {
+        display: none;
+    }
+    section#who {
+        justify-content: flex-start;
+        flex-direction: column;
+    }
+
+    #contact {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        padding: 10px;
+    }
+    #contact .message-container {
+        display: flex;
+        flex-direction: column;
+    }
+    section .message-container .message-box {
+        width: 100%;
+        margin: 0;
+        margin-bottom: 10px;
+    }
+    .footer {
+        height: auto;
+        display: flex;
+        flex-direction: column-reverse;
+        padding-bottom: 15px;
+    }
+    .footer .container {
+        width: auto;
+        text-align: center;
+        margin-bottom: 10px;
+    }
+    .footer .footer-logo {
+        width: 80%;
+    }
 }
