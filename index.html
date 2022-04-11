@@ -200,7 +200,7 @@
             
             async function handleSubmit(event) {
                 if(working) {
-                    alert("Error - form submission is in progress.  If this is a mistake, please call the number listed!  We are sorry for the inconvenience and hope to have it fixed soon!");
+                    status.innerHTML = "Error - form submission is in progress.  If this is a mistake, please call the number listed!  We are sorry for the inconvenience and hope to have it fixed soon!";
                     return;
                 }
                 working = true;
