@@ -651,6 +651,11 @@ img.logo {
 }
 
 
+@media (min-width: 651px) {
+    .meet-team-2 {
+        display: none !important;
+    }
+}
 @media (max-width: 650px) {
     .solution-title {
         font-size: 23px;

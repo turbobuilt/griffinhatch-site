@@ -11,9 +11,9 @@
     <body>
         <div class="cover logo-container" onclick="window.scrollBy(0, 1 * window.innerHeight/100);">
              <img src="./image/griffinhatch_logo_image_dark_rev2.png" class="logo_image revealImage" />
-             <div class="down-arrow-container" >
+             <!-- <div class="down-arrow-container" >
                 <img class="down-arrow" src="./image/down-arrow.png" />
-            </div>
+            </div> -->
         </div>
         <!---->
         <body>
@@ -92,7 +92,7 @@
               </div>
             </section>
 
-            <section id="who">
+            <section id="who" class="meet-team-2">
             <div class="container reveal">
                 <h2>Meet the Team</h2>
                 <div class="text-container">
@@ -119,30 +119,41 @@
                     <div class="text-line">
                       Call us at <a href=”tel:12142539589”><u>(214) 253-9589</u></a> or leave a message below:
                     </div>
-                    <div class="entry-row">
-                      <div class="entry-lines">
-                        <textarea id="Request" name="F_Name" placeholder="First Name" rows="1"></textarea>
-                      </div>
-                      <div class="entry-lines">
-                        <textarea id="Request" name="L_Name" placeholder="Last Name" rows="1"></textarea>
-                      </div>
-                    </div>
-                    <div class="entry-row">
-                      <div class="entry-lines">
-                        <textarea id="Request" name="Company" placeholder="Company Name" rows="1"></textarea>
-                      </div>
-                      <div class="entry-lines">
-                        <textarea id="Request" name="Phone" placeholder="Phone" rows="1"></textarea>
-                      </div>
-                    </div>
-                    <div class="entry-row">
-                      <div class="entry-line">
-                          <textarea id="Request" name="Request" placeholder="What do you need?" rows="4"></textarea>
-                      </div>
-                    </div>
-                    <div class="entry-row">
-                      <button class="button-placement">Submit</button>
-                    </div>
+                    <br>
+                    <form id="my-form" action="https://formspree.io/f/xvolwzzq" method="POST">
+                        <!-- <label>Email:</label>
+                        <input type="email" name="email" />
+                        <label>Message:</label>
+                        <input type="text" name="message" />
+                        <button id="my-form-button">Submit</button>
+                        <p id="my-form-status"></p> -->
+
+
+                        <div class="entry-row">
+                        <div class="entry-lines">
+                            <textarea id="Request" name="F_Name" placeholder="First Name" rows="1"></textarea>
+                        </div>
+                        <div class="entry-lines">
+                            <textarea id="Request" name="L_Name" placeholder="Last Name" rows="1"></textarea>
+                        </div>
+                        </div>
+                        <div class="entry-row">
+                        <div class="entry-lines">
+                            <textarea id="Request" name="Company" placeholder="Company Name" rows="1"></textarea>
+                        </div>
+                        <div class="entry-lines">
+                            <textarea id="Request" name="Phone" placeholder="Phone" rows="1"></textarea>
+                        </div>
+                        </div>
+                        <div class="entry-row">
+                        <div class="entry-line">
+                            <textarea id="Request" name="Request" placeholder="What do you need?" rows="4"></textarea>
+                        </div>
+                        </div>
+                        <div class="entry-row">
+                        <button class="button-placement">Submit</button>
+                        </div>
+                    </form>
                   </div>
                   <div class="message-box">
                     <img src="./image/kangaroo.png" class="image-place" />
@@ -180,6 +191,40 @@
             <a href="https://www.vecteezy.com/free-vector/kangaroo">Kangaroo Vectors by Vecteezy</a>
             <a href="https://www.vecteezy.com/free-vector/down-arrow">Down Arrow Vectors by Vecteezy</a>
         </div>
+        <!-- Place this script at the end of the body tag -->
+        <script>
+            var form = document.getElementById("my-form");
+            
+            async function handleSubmit(event) {
+            event.preventDefault();
+            var status = document.getElementById("my-form-status");
+            var data = new FormData(event.target);
+            fetch(event.target.action, {
+                method: form.method,
+                body: data,
+                headers: {
+                    'Accept': 'application/json'
+                }
+            }).then(response => {
+                if (response.ok) {
+                status.innerHTML = "Thanks for your submission!";
+                form.reset()
+                } else {
+                response.json().then(data => {
+                    if (Object.hasOwn(data, 'errors')) {
+                    status.innerHTML = data["errors"].map(error => error["message"]).join(", ")
+                    } else {
+                    status.innerHTML = "Oops! There was a problem submitting your form"
+                    }
+                })
+                }
+            }).catch(error => {
+                status.innerHTML = "Oops! There was a problem submitting your form"
+            });
+            }
+            form.addEventListener("submit", handleSubmit)
+        </script>
+    </body>
 </html>
 
 
