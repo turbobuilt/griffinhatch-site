@@ -623,6 +623,7 @@ img.logo {
 .solution-details div {
     margin-bottom: 20px;
     font-size: 20px;
+    line-height:1.35;
 }
 .solution-title {
     display: block;
