@@ -151,7 +151,7 @@
                         </div>
                         </div>
                         <div class="entry-row">
-                            <button class="button-placement">Submit</button>
+                            <button class="button-placement submit-button">Submit</button>
                         </div>
                         <p id="my-form-status"></p>
                     </form>
@@ -195,33 +195,47 @@
         <!-- Place this script at the end of the body tag -->
         <script>
             var form = document.getElementById("my-form");
+            let submitted = false;
+            let working = false;
             
             async function handleSubmit(event) {
-            event.preventDefault();
-            var status = document.getElementById("my-form-status");
-            var data = new FormData(event.target);
-            fetch(event.target.action, {
-                method: form.method,
-                body: data,
-                headers: {
-                    'Accept': 'application/json'
+                if(working) {
+                    alert("Error - form submission is in progress.  If this is a mistake, please call the number listed!  We are sorry for the inconvenience and hope to have it fixed soon!");
+                    return;
                 }
-            }).then(response => {
-                if (response.ok) {
-                status.innerHTML = "Thanks for your submission!";
-                form.reset()
-                } else {
-                response.json().then(data => {
-                    if (Object.hasOwn(data, 'errors')) {
-                    status.innerHTML = data["errors"].map(error => error["message"]).join(", ")
-                    } else {
-                    status.innerHTML = "Oops! There was a problem submitting your form"
+                working = true;
+                let button = document.querySelector(".submit-button");
+                button.innerHTML = "Submitting...";
+                event.preventDefault();
+                var status = document.getElementById("my-form-status");
+                var data = new FormData(event.target);
+                fetch(event.target.action, {
+                    method: form.method,
+                    body: data,
+                    headers: {
+                        'Accept': 'application/json'
                     }
-                })
-                }
-            }).catch(error => {
-                status.innerHTML = "Oops! There was a problem submitting your form"
-            });
+                }).then(response => {
+                    if (response.ok) {
+                        status.innerHTML = "Thanks for your submission!";
+                        button.innerHTML = "Submitted!"
+                        form.reset()
+                    } else {
+                        working = false;
+                        button.innerHTML = "Submit"
+                        response.json().then(data => {
+                            if (Object.hasOwn(data, 'errors')) {
+                            status.innerHTML = data["errors"].map(error => error["message"]).join(", ")
+                            } else {
+                            status.innerHTML = "Oops! There was a problem submitting your form"
+                            }
+                        })
+                    }
+
+                }).catch(error => {
+                    status.innerHTML = "Oops! There was a problem submitting your form";
+                    working = false;
+                });
             }
             form.addEventListener("submit", handleSubmit)
         </script>
