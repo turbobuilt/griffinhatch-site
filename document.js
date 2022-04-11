@@ -19,6 +19,10 @@ window.onscroll = () => {
   });
 };
 
+function scrollToDemo(event) {
+  document.body.classList.add("scrolling");
+  setTimeout(() => document.body.classList.remove("scrolling"), 5000);
+}
 
 //                //
 //  FOR SECTION   //
