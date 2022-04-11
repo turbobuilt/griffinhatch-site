@@ -234,6 +234,7 @@
                     }
 
                 }).catch(error => {
+                    console.error(error);
                     status.innerHTML = "Oops! There was a problem submitting your form";
                     working = false;
                 });
