@@ -19,7 +19,7 @@ window.onscroll = () => {
   });
 };
 
-function scrollToDemo(event) {
+function scrollToDemo(event, location) {
   document.body.classList.add("scrolling");
   setTimeout(() => document.body.classList.remove("scrolling"), 5000);
 }
