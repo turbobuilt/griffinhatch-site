@@ -655,6 +655,9 @@ img.logo {
     .meet-team-2 {
         display: none !important;
     }
+    .solution-title-1 {
+        text-align: left;
+    }
 }
 @media (max-width: 650px) {
     .solution-title {
