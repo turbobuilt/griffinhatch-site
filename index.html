@@ -132,18 +132,18 @@
 
                         <div class="entry-row">
                         <div class="entry-lines">
-                            <textarea id="Request" name="F_Name" placeholder="First Name" rows="1"></textarea>
+                            <input id="Request" name="Name" placeholder="Name" rows="1"></textarea>
                         </div>
                         <div class="entry-lines">
-                            <textarea id="Request" name="L_Name" placeholder="Last Name" rows="1"></textarea>
+                            <input type="email" id="email" name="Email" placeholder="Email" rows="1" />
                         </div>
                         </div>
                         <div class="entry-row">
                         <div class="entry-lines">
-                            <textarea id="Request" name="Company" placeholder="Company Name" rows="1"></textarea>
+                            <input id="Company" name="Company" placeholder="Company Name" rows="1"></textarea>
                         </div>
                         <div class="entry-lines">
-                            <textarea id="Request" name="Phone" placeholder="Phone" rows="1"></textarea>
+                            <input type="tel" id="Phone" name="Phone" placeholder="Phone" rows="1" />
                         </div>
                         </div>
                         <div class="entry-row">
@@ -226,9 +226,9 @@
                         button.innerHTML = "Submit"
                         response.json().then(data => {
                             if (Object.hasOwn(data, 'errors')) {
-                            status.innerHTML = data["errors"].map(error => error["message"]).join(", ")
+                                status.innerHTML = data["errors"].map(error => error["message"]).join(", ")
                             } else {
-                            status.innerHTML = "Oops! There was a problem submitting your form"
+                                status.innerHTML = "Oops! There was a problem submitting your form"
                             }
                         })
                     }

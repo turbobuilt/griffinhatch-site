@@ -319,7 +319,7 @@ section .message-container .message-box .text-line a {
     margin: 3px 4px;
     text-align: 0 0;
 }
-textarea {
+textarea, input {
     font-size: 0.8em;
     width: 100%;
     max-width: 100%;
@@ -327,12 +327,16 @@ textarea {
     border-width: 1px;
     border-radius: 3px;
     margin: 0 0%;
+    margin-bottom: 5px;
     padding: 5px;
     box-shadow: 0 0 3px, rgba(0, 0, 0, 0.7);
 }
 textarea:active, textarea:focus {
     border: none;
     outline: none;
+}
+button, a {
+    cursor: pointer;
 }
 .button-placement {
     font-size: 0.9em;
@@ -347,6 +351,15 @@ textarea:active, textarea:focus {
     text-align: center;
     box-shadow: 0 0 3px, rgba(0, 0, 0, 0.7);
     background-color: #ebeef3;
+    transition: .2s all;
+}
+.button-placement:hover {
+    background-color: #7b99c9;
+}
+#my-form-status {
+    font-size: 18px;
+    line-height: 2;
+    margin-top: 10px;
 }
 a {
     color: #0076FF;
