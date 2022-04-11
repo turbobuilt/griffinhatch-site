@@ -70,7 +70,7 @@ reveal();
 
 
 setTimeout(function(){
-  document.querySelector(".down-arrow").style.opacity = "1";
+  // document.querySelector(".down-arrow").style.opacity = "1";
 },3000)
 
 
