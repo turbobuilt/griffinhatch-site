@@ -272,7 +272,7 @@ section .message-container {
 }
 section .message-container .message-box {
     width: 50%;
-    max-height: 48vh;
+    /* max-height: 48vh; */
     font-size: 1.6rem;
     border-radius: 0px;
     margin: 15px;
