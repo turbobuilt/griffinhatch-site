@@ -1,0 +1,1 @@
+gsutil -m rsync -R -d -x '.git*|.gitignore|deploy.sh|CNAME|resources*|externalMockupFiles*|git.sh|.DS_Store' . gs://griffinhatch-site
