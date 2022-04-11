@@ -20,8 +20,12 @@ window.onscroll = () => {
 };
 
 function scrollToDemo(event, location) {
+  event.preventDefault();
   document.body.classList.add("scrolling");
   setTimeout(() => document.body.classList.remove("scrolling"), 5000);
+  document.querySelector(location).scrollIntoView({
+      behavior: 'smooth'
+  });
 }
 
 //                //

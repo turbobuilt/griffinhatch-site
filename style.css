@@ -28,17 +28,16 @@
     padding: 20px;
 }
 html {
-    height: 100vh;
-    overflow: hidden;
+    scroll-snap-type: y mandatory;
 }
-body {
+/* body {
     scroll-snap-type: y mandatory;
     overflow: auto;
     height: 100vh;
-}
+} */
 
-body.scrolling {
-    scroll-snap-type: none;
+body.scrolling *{
+    scroll-snap-align: none !important;
 }
 
 /* Body Background Definition */
