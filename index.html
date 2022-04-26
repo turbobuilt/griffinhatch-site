@@ -3,24 +3,31 @@
 
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-    <link rel="stylesheet" href="./style.css" />
+    <link rel="stylesheet" href="./style.css?bibwwwweqr" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Varela+Round&display=swap"
-        rel="stylesheet">
-    <script type="text/javascript" src="./document.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Varela+Round&display=swap" rel="stylesheet">
+    <script>
+        (function(h,o,t,j,a,r){
+            h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)};
+            h._hjSettings={hjid:2923617,hjsv:6};
+            a=o.getElementsByTagName('head')[0];
+                r=o.createElement('script');r.async=1;
+            r.src=t+h._hjSettings.hjid+j+h._hjSettings.hjsv;
+            a.appendChild(r);
+        })(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=');
+    </script>
 </head>
 
 <body>
-    <div class="cover logo-container" onclick="window.scrollBy(0, 1 * window.innerHeight/100);">
+    <div class="content">
+    <div class="cover logo-container full-height scroll-snap" >
         <img src="./image/griffinhatch_logo_compressed.png" class="logo_image revealImage" />
         <!-- <div class="down-arrow-container" >
                 <img class="down-arrow" src="./image/down-arrow.png" />
             </div> -->
     </div>
     <!---->
-
-    <body>
         <!--
             <header>
               <nav>
@@ -33,7 +40,7 @@
             -->
 
 
-        <section id="solution-1" class="solution-container">
+        <section id="solution-1" class="solution-container full-height scroll-snap">
             <div class="img-container">
                 <img src="./image/eagle.png" />
             </div>
@@ -47,7 +54,7 @@
             </div>
         </section>
 
-        <section id="solution-2">
+        <section id="solution-2" class="full-height scroll-snap">
             <div class="solution-title">Custom Software Works Better</div>
             <div class="solution-container">
                 <div class="solution-details">
@@ -68,7 +75,7 @@
             </div>
         </section>
 
-        <section id="who">
+        <section id="who" class="full-height scroll-snap">
             <div class="container reveal">
                 <h2>Meet the Team</h2>
                 <div class="text-container">
@@ -98,7 +105,7 @@
             </div>
         </section>
 
-        <section id="who" class="meet-team-2">
+        <section id="who" class="meet-team-2 full-height scroll-snap">
             <div class="container reveal">
                 <h2>Meet the Team</h2>
                 <div class="text-container">
@@ -117,7 +124,7 @@
             </div>
         </section>
 
-        <section id="contact">
+        <section id="contact" class="full-height scroll-snap">
             <div class="container reveal">
                 <h2>Schedule a Demo</h2>
                 <p class="advice">Don't be shy! If you think you might need help, contact us. If you don't work with us,
@@ -177,17 +184,21 @@
         <div class="footer">
             <div class="container">
                 <div>
-                    <h4><u>Business Information</u></h4>
-                    <br>
+                    <!-- <h4><u>Business Information</u></h4>
+                    <br> -->
                     <!-- <div class="text">9am-5pm cst. Monday - Friday</div> -->
                     <!-- <div class="text">Virtual Mailbox TBD - Dallas, TX</div> -->
                     <!-- <div class="text">Griffin Hatch Consulting Group, LLC &copy; 2022</div> -->
-                    <br>
-                    <div class="text"><a href="tel:12142539589" onclick="try{gtag('event', 'conversion', { 'send_to': 'AW-10814930481/ad04CNKYr7IDELH8-qQo', 'event_callback': callback });}catch(err){console.error(err)}">(214) 253-9589</a></div>
+                    <!-- <br> -->
                     <!-- <div class="text"><a href="mailto:contact@griffinhatch.com">contact@griffinhatch.com</a></div> -->
                 </div>
             </div>
-            <img src="./image/griffinhatch_logo_image_dark_rev2_sm.png" class="footer-logo">
+            <div style="display:flex;flex-direction:column;align-items:center;">
+                <img style="width:200px" src="./image/griffinhatch_logo_image_dark_rev2_sm.png" class="footer-logo">
+                <br>
+                <div class="text"><a href="tel:12142539589" onclick="try{gtag('event', 'conversion', { 'send_to': 'AW-10814930481/ad04CNKYr7IDELH8-qQo', 'event_callback': callback });}catch(err){console.error(err)}">(214) 253-9589</a></div>
+            </div>
+            <br>
             <div class="container">
                 <div>
                     <h4></h4>
@@ -203,6 +214,30 @@
             <a href="https://www.vecteezy.com/free-vector/kangaroo">Kangaroo Vectors by Vecteezy</a>
             <a href="https://www.vecteezy.com/free-vector/down-arrow">Down Arrow Vectors by Vecteezy</a>
         </div>
+    </div>
+        <!-- <script src="js/scrollSnap.js" ></script> -->
+        <!-- <script>
+            var elements = [];
+            document.querySelectorAll(".scroll-snap").forEach(function(el) {
+                elements.push(el)
+            });
+            var previousScroll = null;
+            window.onscroll = function(event) {
+                if(!previousScroll) {
+                    previousScroll = event
+                    return;
+                }
+                console.log(event);
+                for(var i = 0; i < elements.length; ++i) {
+                    var element = elements[i];
+                    var rect = element.getBoundingClientRect();
+                    console.log(rect);
+                    if(rect.y > 0 && rect.y < 10)
+                }
+                previousScroll = event;
+            }
+        </script> -->
+        <script type="text/javascript" src="./document.js?f"></script>
         <script src="https://www.google.com/recaptcha/api.js" async defer></script>
 
         <!-- Place this script at the end of the body tag -->
