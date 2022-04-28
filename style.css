@@ -224,10 +224,9 @@ section .text-container .who-box {
     /* max-width: 40%; */
     flex-grow: 1;
     font-size: 1.6rem;
-    border-radius: 0px;     
     margin: 5px 15px;
     padding: 25px;
-    border-radius: 4px;
+    border-radius: 1px;
     box-shadow: 0 0 6px rgba(0, 0, 0, 0.7);
     background: #2f354158;/* #41475a;/* #50556158;  #dde8ff58 */
 }
